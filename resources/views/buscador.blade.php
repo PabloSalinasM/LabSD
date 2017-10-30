@@ -19,21 +19,35 @@
           
           <th> ID </th>
           <th> Nombre </th>
-          <th> NombreTitulo </th> 
-          <th> Email</th>
-          <th> Dia de ingreso </th>
+          <th> Sigla </th> 
+          <th> Capital</th>
+          <th> Idioma </th>
+          <th> Poblacion </th>
+          <th> Moneda </th> 
+          <th> Independencia</th>
+          <th> Lema </th>
+          <th> Presidente</th>
+          <th> Continente </th>
       
         </thead>
 
         @foreach($buscador as $bus)
 
         <tr>
-          <td>{{$bus->userid}}</td>
-          <td>{{$bus->username}}</td>
-          <td>{{$bus->usertitle}}</td>
-          <td>{{$bus->email}}</td>
-          <td>{{$bus->passworddate}}</td>
+          <td>{{$bus->id}}</td>
+          <td>{{$bus->nombre}}</td>
+          <td>{{$bus->sigla}}</td>
+          <td>{{$bus->capital}}</td>
+          <td>{{$bus->idioma}}</td>
+          <td>{{$bus->poblacion}}</td>
+          <td>{{$bus->moneda}}</td>
+          <td>{{$bus->independencia}}</td>
+          <td>{{$bus->lema}}</td>
+          <td>{{$bus->presidente}}</td>
+          <td>{{$bus->continente}}</td>
         </tr>
+        
+      
 
         @endforeach
 

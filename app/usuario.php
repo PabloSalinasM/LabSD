@@ -8,14 +8,20 @@ class usuario extends Model
 {
    protected $table='user';
 
-    protected $primarykey='userid';
+    protected $primarykey='id';
 
     public $timestamps = false;
 
     protected $fillable = [
-    	'usertitle',
-    	'email',
-    	'username',
-    	'passworddate';
-    	  //
+    	'nombre',
+    	'sigla',
+    	'capital',
+    	'idioma',
+    	'poblacion',
+    	'moneda',
+    	'independecia',
+    	'lema',
+    	'presidente',
+    	'continente';
+    	 
 }
